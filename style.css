@@ -2,7 +2,7 @@
 
 :root {
   --main-color: #555;
-  --accent-color: #010100; 
+  --accent-color: #010100;
 }
 
 .wrapper {
@@ -96,4 +96,40 @@ header img {
   font-size: 36px;
   text-align: center;
   line-height: 80px;
+}
+
+
+.hero {
+  display: flex;
+  background: url(top-1.avif) center bottom / cover no-repeat;
+  min-height: 720px;
+  align-items: center;
+  padding: 120px 20px;
+  justify-content: center;
+  text-align: left;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--accent-color);
+  opacity: 0.5;
+}
+
+.copy {
+  color: #fff;
+  font-size: clamp(40px, 5.5vw, 80px);
+  font-weight: lighter;
+  line-height: 1.2;
+  position: relative;
+}
+
+.copy .sub {
+  display: block;
+  font-size: clamp(16px, 2.2vw, 32px);
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
 }

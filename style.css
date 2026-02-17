@@ -11,7 +11,9 @@
   padding: 0 20px;
 }
 
-* {
+* ,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -66,6 +68,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 .header-inner {
@@ -132,4 +135,73 @@ header img {
   max-width: 960px;
   margin: 0 auto;
   position: relative;
+}
+
+.news {
+  background: url(company2.avif) center bottom / cover no-repeat;
+  min-height: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  color: #fff;
+  text-align: center;
+  font-size: clamp(28px, 4.5vw, 64px);
+  font-weight: 500;
+}
+
+.news-overlay {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px;
+  background-color: rgba(1, 1, 0, 0.5);
+}
+
+.news-inner {
+  width: 80%;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 100;
+  text-align: left;
+}
+
+.news-list li {
+  display: flex;
+}
+
+.news-list li a {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  width: 100%;
+}
+
+.news-list time {
+  width: 140px;
+  flex-shrink: 0;
+}
+
+.news-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.more {
+  width: 320px;
+  height: 96px;
+  background-color: var(--accent-color);
+  color: #fff;
+  font-size: 48px;
+  margin-top: 24px;
+  text-align: center;
+  line-height: 96px;
+  align-self: center;
 }

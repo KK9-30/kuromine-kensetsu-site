@@ -158,7 +158,7 @@ header img {
   justify-content: center;
   width: 80%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 24px;
   padding: 80px;
   background-color: rgba(1, 1, 0, 0.5);
 }
@@ -200,10 +200,15 @@ header img {
   background-color: var(--accent-color);
   color: #fff;
   font-size: 48px;
-  margin-top: 24px;
   text-align: center;
   line-height: 96px;
   align-self: center;
+}
+
+.more a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -228,7 +233,7 @@ header img {
   justify-content: center;
   width: 80%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 24px;
   padding: 80px;
   background-color: rgba(1, 1, 0, 0.5);
 }
@@ -252,14 +257,77 @@ header img {
   font-weight: 300;
 }
 
-.more {
-  width: 320px;
-  height: 96px;
-  background-color: var(--accent-color);
-  color: #fff;
-  font-size: 48px;
-  margin-top: 24px;
-  text-align: center;
-  line-height: 96px;
-  align-self: center;
+
+
+.projects > * {
+  position: relative;
+  z-index: 1;
 }
+
+.projects {
+  background: url(house4.avif) center / cover no-repeat;
+  min-height: 960px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 72px;
+}
+
+.projects::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(1, 1, 0, 0.3);
+  z-index: 0;
+}
+
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  width: 64%;
+  gap: 48px;
+}
+
+.section-title {
+  color: #fff;
+  text-align: center;
+  font-size: clamp(28px, 4.5vw, 64px);
+  font-weight: 500;
+}
+
+.projects-overlay {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  min-height: 400px;
+  margin: 0 auto;
+  padding: 120px 20px 0;
+  background-color: rgba(1, 1, 0, 0.5);
+}
+
+.projects-inner {
+  width: 90%;
+  color: #fff;
+  font-weight: 300;
+  text-align: left;
+  display: flex;
+  gap: 64px;
+}
+
+.projects p {
+  font-size: clamp(28px, 2vw, 32px);
+  line-height: 1.4;
+  text-align: justify;
+  color: #fff;
+  font-weight: 300;
+}
+
+.project-title {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 24px;
+}
+

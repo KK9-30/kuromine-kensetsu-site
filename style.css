@@ -20,6 +20,7 @@
 html {
   font-size: 100%;
   scroll-behavior: smooth;
+  scroll-padding-top: 180px;
 }
 
 h1,
@@ -83,7 +84,7 @@ header img {
   width: 248px;
 }
 
-.menu {
+header .menu {
   display: flex;
   align-items: center;
   gap: 56px;
@@ -91,7 +92,7 @@ header img {
   font-size: 32px;
 }
 
-.contact a {
+.contact-btn a {
   background-color: var(--accent-color);
   display: inline-block;
   width: 240px;
@@ -331,3 +332,35 @@ header img {
   margin-bottom: 24px;
 }
 
+
+footer {
+  background-color: #010100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  height: 400px;
+}
+
+footer p {
+  color: #fff;
+  font-weight: 300;
+}
+
+footer .menu {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  color: #fff;
+  font-size: 32px;
+}
+
+.adress {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.copyright {
+  font-size: 20px;
+}

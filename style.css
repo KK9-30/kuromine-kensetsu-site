@@ -9,9 +9,10 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  display: flex;
 }
 
-* ,
+*,
 *::after,
 *::before {
   box-sizing: border-box;
@@ -61,6 +62,8 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* トップページ */
 
 header {
   background-color: var(--main-color);
@@ -363,4 +366,191 @@ footer .menu {
 
 .copyright {
   font-size: 20px;
+}
+
+.pages {
+  position: relative;
+  overflow: hidden;
+}
+
+.pages::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: -20%;
+  width: 140%;
+  height: 100%;
+  background: #555;
+  transform: skewY(20deg);
+  z-index: 0;
+}
+
+.pages > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* 会社概要 */
+
+.page-title {
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 106px;
+}
+
+.part-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 106px 0 64px;
+}
+
+.about-page .wrapper {
+  flex-direction: column;
+  margin-bottom: 106px;
+}
+
+.message-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ceo-img {
+  width: 400px;
+  height: auto;
+}
+
+.message-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about-page .part-title, 
+.about-page table {
+  color: #fff;
+}
+
+.ceo-message {
+  font-size: 40px;
+}
+
+.ceo-name {
+  font-size: 36px;
+}
+
+.message {
+  font-weight: 300;
+  font-size: 32px;
+  max-width: 720px;
+}
+
+.about-detail {
+  font-size: 32px;
+  font-weight: 300;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: auto;
+}
+
+.about-detail th {
+  font-weight: 300;
+  text-align: left;
+}
+
+.about-detail th:first-child,
+.about-detail td:first-child {
+  border-right: #fff 1px solid;
+  width: 128px;
+  white-space: nowrap;
+  padding-right: 40px;
+}
+
+.about-detail th:nth-child(2),
+.about-detail td:nth-child(2) {
+  padding-left: 40px;
+}
+
+.history {
+  font-size: 32px;
+  font-weight: 300;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: auto;
+}
+
+.history td:first-child {
+  width: 128px;
+  white-space: nowrap;
+  padding-right: 40px;
+}
+
+.history td:nth-child(2) {
+  padding-left: 40px;
+}
+
+
+.recruitment {
+  background: url(top-6.avif) center / cover no-repeat;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  color: #fff;
+  text-align: center;
+  font-size: clamp(28px, 4.5vw, 64px);
+  font-weight: 500;
+}
+
+.recruitment-overlay {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  padding: 80px;
+  background-color: rgba(1, 1, 0, 0.5);
+}
+
+.recruitment-inner {
+  width: 80%;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.recruitment p {
+  font-size: 32px;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.recruitment .recruitment-inner {
+  font-size: clamp(28px, 3.33vw, 48px);
+  font-weight: 300;
+}
+
+p.small {
+  font-size: 20px;
+}
+
+
+.contact-lead {
+  background-color: #555;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.contact-lead p {
+  font-size: 36px;
+  color: #fff;
 }

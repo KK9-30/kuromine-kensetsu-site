@@ -707,3 +707,39 @@ p.small {
   height: 48px;
   border: solid 1px #a1a1a1;
 }
+
+
+/* 記事 */
+
+.news-detail-page .pages::before {
+  top: 50%;
+}
+
+.article-inner {
+  max-width: 1000px;
+  margin: 64px auto;
+}
+
+.article-ttl {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.article-date {
+  font-size: 32px;
+  color: #a1a1a1;
+}
+
+.thumb {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  background-color: #eee;
+  margin-top: 64px;
+}
+
+.article-text {
+  text-align: justify;
+  font-size: 24px;
+  margin-top: 64px;
+  color: #fff;
+}

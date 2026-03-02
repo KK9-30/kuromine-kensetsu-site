@@ -200,7 +200,7 @@ header .menu {
 
 .more {
   width: 320px;
-  height: 96px;
+  aspect-ratio: 10 / 3;
   background-color: var(--accent-color);
   color: #fff;
   font-size: 48px;
@@ -263,7 +263,7 @@ header .menu {
 
 
 
-.projects > * {
+.projects>* {
   position: relative;
   z-index: 1;
 }
@@ -384,7 +384,7 @@ footer .menu {
   z-index: 0;
 }
 
-.pages > * {
+.pages>* {
   position: relative;
   z-index: 1;
 }
@@ -429,7 +429,7 @@ footer .menu {
   gap: 40px;
 }
 
-.about-page .part-title, 
+.about-page .part-title,
 .about-page table {
   color: #fff;
 }
@@ -834,4 +834,151 @@ body.thanks-page {
 
 .thanks-page footer {
   bottom: 100%;
+}
+
+
+@media (max-width: 1200px) {
+
+  header {
+    padding: 30px 20px;
+  }
+
+  header .menu {
+    font-size: 24px;
+    gap: 24px;
+  }
+
+  header img {
+    width: 132px;
+  }
+
+  .contact-btn a {
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .header-inner {
+    max-width: 1000px;
+  }
+
+  body {
+    padding-top: 114px;
+  }
+
+  .hero {
+    height: 480px;
+    min-height: 0;
+  }
+
+  .news,
+  .about,
+  .projects {
+    max-height: 500px;
+    min-height: 0;
+  }
+
+  .copy .sub {
+    max-width: 540px;
+  }
+
+  .news-overlay {
+    max-width: 1000px;
+    margin: 0 auto 24px;
+    padding: 40px;
+  }
+
+  .news-inner {
+    font-size: 24px;
+  }
+
+  .top-news-list li a {
+    gap: 50px;
+  }
+
+  .top-news-list time {
+    width: 80px;
+  }
+
+  .more {
+    width: 240px;
+    font-size: 32px;
+    line-height: 72px;
+    margin-bottom: 24px;
+  }
+
+  .about-overlay {
+    max-width: 1000px;
+    padding: 40px;
+  }
+
+  .about-inner {
+    font-size: 20px;
+  }
+
+  .about p {
+    font-size: 20px;
+  }
+
+
+
+  .projects {
+    gap: 32px;
+  }
+
+  .section-heading {
+    width: 64%;
+    gap: 24px;
+  }
+
+  .projects-overlay {
+    max-width: 200px;
+    min-height: 200px;
+    padding: 8px 12px;
+  }
+
+  .projects-inner {
+    gap: 24px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .projects p {
+    font-size: 16px;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+
+  footer {
+    gap: 8px;
+    height: 240px;
+  }
+
+  footer img {
+    width: 180px;
+  }
+
+  footer .menu {
+    gap: 16px;
+    font-size: 24px;
+  }
+
+  .adress {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .copyright {
+    font-size: 16px;
+  }
+
 }

@@ -981,4 +981,125 @@ body.thanks-page {
     font-size: 16px;
   }
 
+
+  /* 会社概要 */
+
+  .about-page .pages::before {
+    top: 45%;
+  }
+
+  .page-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .part-title {
+    font-size: 20px;
+    margin: 40px 0 32px;
+  }
+
+  .about-page .wrapper {
+    margin-bottom: 40px;
+    padding: 0 40px;
+  }
+
+  .message-container {
+    justify-content: left;
+    gap: 32px;
+  }
+
+  .ceo-img {
+    width: 200px;
+    height: 100%;
+  }
+
+  .message-inner {
+    gap: 20px;
+  }
+
+  .ceo-message {
+    font-size: 32px;
+  }
+
+  .ceo-name {
+    font-size: 24px;
+  }
+
+  .message {
+    font-size: 16px;
+    max-width: 480px;
+  }
+
+  .about-detail {
+    font-size: 16px;
+  }
+
+  .about-detail th:first-child,
+  .about-detail td:first-child {
+    width: 128px;
+    white-space: nowrap;
+    padding-right: 32px;
+  }
+
+  .about-detail th:nth-child(2),
+  .about-detail td:nth-child(2) {
+    padding-left: 32px;
+  }
+
+  .history {
+    font-size: 16px;
+  }
+
+  .history td:first-child {
+    width: 128px;
+    white-space: nowrap;
+    padding-right: 32px;
+  }
+
+  .history td:nth-child(2) {
+    padding-left: 32px;
+  }
+
+
+  .recruitment {
+    min-height: 500px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .recruitment-overlay {
+    max-width: 1000px;
+    margin: 24px auto;
+    padding: 40px;
+  }
+
+  .recruitment-inner {
+    font-size: 16px;
+  }
+
+  .recruitment p {
+    font-size: 20px;
+  }
+
+  .recruitment .recruitment-inner {
+    font-size: 20px;
+  }
+
+  p.small {
+    padding-top: 8px;
+    font-size: 16px;
+  }
+
+
+  .contact-lead {
+    min-height: 200px;
+    gap: 16px;
+  }
+
+  .contact-lead p {
+    font-size: 24px;
+  }
+
 }

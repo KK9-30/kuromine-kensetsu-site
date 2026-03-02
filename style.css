@@ -1102,4 +1102,58 @@ body.thanks-page {
     font-size: 24px;
   }
 
+
+  /* 事業内容 */
+
+  .projects-page .pages::before {
+    top: 42%;
+  }
+
+  .explanation {
+    font-size: 20px;
+  }
+
+  .projects-page .wrapper {
+    max-width: 800px;
+    padding: 0 40px;
+    max-width: 800px;
+    padding: 0 40px;
+    gap: 80px;
+    margin-bottom: 80px;
+  }
+
+  .kinds {
+    gap: 80px;
+  }
+
+  .ttls {
+    gap: 16px;
+  }
+
+  .kinds-ttl {
+    font-size: 24px;
+  }
+
+  .ttls p {
+    font-size: 16px;
+  }
+
+  .ex-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .ex-inner {
+    width: 320px;
+  }
+
+  .projects-ex {
+    font-size: 16px;
+  }
+
+  .projects-ex img {
+    width: 300px;
+  }
+
 }

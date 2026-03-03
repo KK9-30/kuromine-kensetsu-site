@@ -11,6 +11,7 @@
   <title>黒峰建設株式会社 | 橋梁・土木工事の専門企業</title>
   <link rel="icon" href="icon.jpg">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
 <body>
@@ -21,15 +22,35 @@
           <img src="logo.jpg" alt="黒峰建設株式会社">
         </a>
       </h1>
-      <nav>
+      <nav class="PC-menu">
         <ul class="menu">
           <li><a href="#top">トップ</a></li>
           <li><a href="about.html">会社概要</a></li>
           <li><a href="projects.html">事業内容</a></li>
-          <li><a href="news.html"><a href="news.html">お知らせ</a></a></li>
-          <li class="contact-btn"><a href="contact.html">お問合せ</a></li>
+          <li><a href="news.html">お知らせ</a></li>
         </ul>
       </nav>
+      <div class="header-right">
+        <a href="contact.html" class="contact-btn">お問合せ</a>
+        <div class="SP-menu">
+          <span class="material-symbols-outlined" id="menu-open">
+            menu
+          </span>
+          <div class="SP-overlay">
+            <span class="material-symbols-outlined" id="menu-close">
+              close
+            </span>
+            <nav class="SP-nav">
+              <ul>
+                <li><a href="index.html">トップ</a></li>
+                <li><a href="about.html">会社概要</a></li>
+                <li><a href="projects.html">事業内容</a></li>
+                <li><a href="news.html">お知らせ</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -137,9 +158,12 @@
       </ul>
     </nav>
     <p class="adress">〒000-0000
-    <br>東京都XX区3丁目1-2-3 スカイビル6F</p>
+      <br>東京都XX区3丁目1-2-3 スカイビル6F
+    </p>
     <p class="copyright">©2026黒峰建設</p>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 
 </html>

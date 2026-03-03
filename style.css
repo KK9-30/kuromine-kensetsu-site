@@ -1211,4 +1211,30 @@ body.thanks-page {
     font-size: 20px;
   }
 
+
+  /* お問合せ */
+
+  .contact-page .pages::before {
+    top: 80%;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+
+  .submit {
+    margin: 0 auto 80px;
+  }
+
+
+  /* サンクス */
+
+  .thanks-page .pages::before {
+    top: 60%;
+  }
+
+  .thanks-page {
+    min-height: 900px;
+  }
+
 }

@@ -1428,6 +1428,7 @@ body.thanks-page {
 
   .ceo-img {
     width: 80px;
+    padding-top: 10px;
   }
 
   .message-inner {
@@ -1482,7 +1483,7 @@ body.thanks-page {
   /* 事業内容 */
 
   .projects-page .pages::before {
-    top: 41%;
+    top: 40%;
   }
 
   .explanation {

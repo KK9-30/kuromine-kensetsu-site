@@ -1156,4 +1156,40 @@ body.thanks-page {
     width: 300px;
   }
 
+
+
+  /* お知らせ */
+
+  .news-list {
+    padding: 0 40px;
+  }
+
+  .news-body {
+    margin: 24px auto 12px;
+  }
+
+  .news-body h3 {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  h3.news-ttl {
+    margin: 0;
+  }
+
+  .news-date {
+    font-size: 12px;
+  }
+
+  .page-numbers {
+    font-size: 20px;
+    margin: 40px auto 80px;
+  }
+
+  .page-numbers li {
+    padding: 2px;
+    width: 24px;
+    height: 24px;
+  }
+
 }

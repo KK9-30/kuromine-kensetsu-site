@@ -1317,4 +1317,249 @@ body.thanks-page {
     display: block;
   }
 
+  .news,
+  .about,
+  .projects {
+    max-height: 1000px;
+    min-height: 0;
+  }
+
+  .news-overlay {
+    max-width: 1000px;
+    margin: 0 auto 24px;
+    padding: 40px;
+  }
+
+  .news-inner {
+    font-size: 16px;
+  }
+
+  .top-news-list li a {
+    gap: 8px;
+  }
+
+  .top-news-list time {
+    width: 50px;
+  }
+
+  .more {
+    width: 180px;
+    font-size: 24px;
+    line-height: 54px;
+  }
+
+  .about .about-inner .sub-heading {
+    font-size: 24px;
+  }
+
+  .about p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .projects {
+    gap: 24px;
+  }
+
+  .section-heading {
+    gap: 8px;
+  }
+
+  .section-heading p {
+    font-weight: 400;
+  }
+
+  .projects .projects-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .projects-overlay {
+    max-width: 200px;
+    min-height: 200px;
+    aspect-ratio: 1 / 1;
+    padding: 8px 12px;
+  }
+
+
+  footer {
+    gap: 8px;
+    height: 180px;
+  }
+
+  footer img {
+    width: 120px;
+  }
+
+  footer .menu {
+    gap: 8px;
+    font-size: 16px;
+  }
+
+  .adress {
+    font-size: 16px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+
+
+  /* 会社概要 */
+
+  .about-page .pages::before {
+    top: 43%;
+  }
+
+  .about-page .wrapper {
+    padding: 0 20px;
+  }
+
+  .page-title {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  .part-title {
+    font-size: 20px;
+    margin: 20px 0 32px;
+  }
+
+  .ceo-img {
+    width: 80px;
+  }
+
+  .message-inner {
+    gap: 8px;
+  }
+
+  .ceo-message {
+    font-size: 24px;
+  }
+
+  .ceo-name {
+    font-size: 20px;
+  }
+
+  .message {
+    text-align: justify;
+  }
+
+
+  .recruitment {
+    min-height: 300px;
+  }
+
+  .recruitment-overlay {
+    margin: 16px auto;
+    padding: 16px 8px;
+  }
+
+  .recruitment .section-title,
+  .contact-lead .section-title {
+    font-size: 24px;
+  }
+
+  .recruitment p {
+    font-size: 16px;
+  }
+
+  p.small {
+    font-size: 12px;
+  }
+
+  .contact-lead {
+    min-height: 160px;
+    gap: 8px;
+  }
+
+  .contact-lead p {
+    font-size: 16px;
+  }
+
+
+  /* 事業内容 */
+
+  .projects-page .pages::before {
+    top: 41%;
+  }
+
+  .explanation {
+    font-size: 16px;
+  }
+
+  .projects-page .wrapper {
+    max-width: 800px;
+    padding: 0 16px;
+    gap: 20px;
+  }
+
+  .kinds {
+    gap: 20px;
+  }
+
+  .ex-inner {
+    width: 100%;
+    order: 2;
+  }
+
+  .projects-ex .ex-detail,
+  .projects-ex:nth-of-type(even) .ex-detail {
+    font-size: 16px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .projects-ex img {
+    width: 100%;
+    order: 1;
+  }
+
+
+
+  /* お知らせ */
+
+  .news-list {
+    padding: 0 16px;
+    gap: 16px;
+  }
+
+
+  /* 記事 */
+
+  .article-inner {
+    width: 90%;
+  }
+
+  .article-ttl {
+    font-size: 24px;
+  }
+
+  .article-date {
+    font-size: 16px;
+  }
+
+  .article-text {
+    font-size: 16px;
+  }
+
+
+  /* サンクス */
+
+  .thanks-page {
+    min-height: 700px;
+  }
+
+  .thanks-comment {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  .back {
+    font-size: 12px;
+  }
+
 }

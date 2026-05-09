@@ -175,7 +175,7 @@ a.contact-btn {
 
 .hero {
   display: flex;
-  background: url(top-1.avif) center bottom / cover no-repeat;
+  background: url(img/top-1.avif) center bottom / cover no-repeat;
   min-height: 720px;
   align-items: center;
   padding: 120px 20px;
@@ -209,7 +209,7 @@ a.contact-btn {
 }
 
 .news {
-  background: url(company2.avif) center bottom / cover no-repeat;
+  background: url(img/company2.avif) center bottom / cover no-repeat;
   min-height: 720px;
   display: flex;
   flex-direction: column;
@@ -284,7 +284,7 @@ a.contact-btn {
 
 
 .about {
-  background: url(top-3.avif) center / cover no-repeat;
+  background: url(img/top-3.avif) center / cover no-repeat;
   min-height: 720px;
   display: flex;
   flex-direction: column;
@@ -336,7 +336,7 @@ a.contact-btn {
 }
 
 .projects {
-  background: url(house4.avif) center / cover no-repeat;
+  background: url(img/house4.avif) center / cover no-repeat;
   min-height: 960px;
   display: flex;
   flex-direction: column;
@@ -561,7 +561,7 @@ footer .menu {
 
 
 .recruitment {
-  background: url(top-6.avif) center / cover no-repeat;
+  background: url(img/top-6.avif) center / cover no-repeat;
   min-height: 800px;
   display: flex;
   flex-direction: column;
@@ -668,41 +668,28 @@ p.small {
   font-size: clamp(28px, 2vw, 32px);
 }
 
-.ex-ttl {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-}
-
-.projects-ex:nth-of-type(even) {
-  text-align: right;
-}
-
-.ex-detail {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.ex-inner {
+.ex-text {
   display: flex;
   flex-direction: column;
   width: 560px;
 }
 
-.ex-inner dt,
-.ex-inner dd {
+.ex-text dt,
+.ex-text dd {
   margin: 0;
 }
 
 .projects-ex {
   display: flex;
-  flex-direction: column;
   font-size: clamp(28px, 2vw, 32px);
+  text-align: justify;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.projects-ex:nth-of-type(even) .ex-detail {
+.projects-ex:nth-of-type(even) {
   flex-direction: row-reverse;
+  text-align: justify;
 }
 
 .projects-ex img {
@@ -1205,13 +1192,7 @@ body.thanks-page {
     font-size: 16px;
   }
 
-  .ex-detail {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .ex-inner {
+  .ex-text {
     width: 320px;
   }
 
@@ -1500,13 +1481,13 @@ body.thanks-page {
     gap: 20px;
   }
 
-  .ex-inner {
+  .ex-text {
     width: 100%;
     order: 2;
   }
 
-  .projects-ex .ex-detail,
-  .projects-ex:nth-of-type(even) .ex-detail {
+  .projects-ex,
+  .projects-ex:nth-of-type(even) {
     font-size: 16px;
     flex-direction: column;
     align-items: stretch;

@@ -50,6 +50,10 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.8;
   padding-top: 180px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 img {
@@ -195,7 +199,7 @@ a.contact-btn {
 .copy {
   color: #fff;
   font-size: clamp(40px, 5.5vw, 80px);
-  font-weight: lighter;
+  font-weight: 100;
   line-height: 1.2;
   position: relative;
 }

@@ -2,4 +2,4 @@
 ターゲット： 発注者、求職者
 備考： 歴史のある会社という設定なので、要素や文字を大きめに、色合いを暗くするなど、重厚感と信頼感を意識したデザインにしました。WordPress化を前提としているので、一部の機能はダミーになっています。
 使用： HTML/CSS/JavaScript/(Figma)
-URL: https://kumano.main.jp/kuromine-kensetsu/
+URL: https://kk-web.site/kuromine/
